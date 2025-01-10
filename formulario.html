@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog personal de práctica">
+    <title>Mi blog Personal</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">PRINCIPAL</a></li>
+                <li><a href="recetas.html">RECETAS</a></li>
+                <li><a href="formulario.html">FORMULARIO</a></li>
+                <li><a href="viajes.html">VIAJES</a></li>
+                <li><a href="galeria.html">GALERIA</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="formulario-section" role="region" aria-labelledby="formulario">
+            <h2 id="formulario">Formulario</h2>
+            <p class="caption">Simplemente práctico algunos formatos de formularios.</p>
+            <form method="post" action="/*--Agregar url de envio--*/">
+                <fieldset class="recuadros">
+                    <legend>A Mark Zuckerberg le interesa esto...</legend>
+                    <div class="info"><label for="nombre">Nombre/s: </label><input type="text" id="nombre"></div>
+                    <div class="info"><label for="email">Email: </label><input type="email" id="email"></div>
+                    <div class="info"><label for="fecha">Fecha de nacimiento: </label><input type="date" id="fecha"></div>
+                </fieldset>
+                <fieldset class="recuadros">
+                    <legend>De Tin..</legend>
+                    <input type="radio" id="marin" name="cancion-infantil" checked><label for="marin">Marín</label>
+                    <input type="radio" id="dedo" name="cancion-infantil"><label for="dedo">de Do</label>
+                    <input type="radio" id="pingue" name="cancion-infantil"><label for="pingue">Pingüe</label>
+                    <input type="radio" id="cucara-macara" name="cancion-infantil"><label for="cucara-macara">Cucara Macara</label>
+                    <input type="radio" id="titere-fue" name="cancion-infantil"><label for="titere-fue">titere fue</label>
+                </fieldset>
+                <fieldset class="recuadros">
+                    <legend>Marca tus logros</legend>
+                    <input type="checkbox" id="graduado"><label for="graduado">Graduado</label>
+                    <input type="checkbox" id="casa"><label for="casa">Compré una casa</label>
+                    <input type="checkbox" id="viajar"><label for="viajar">Viaje por el mundo</label>
+                    <input type="checkbox" id="argentino"><label for="argentino">Ser Argentino</label>
+                    <input type="checkbox" id="bitcoin"><label for="bitcoin">Compré Bitcoin en 2015</label>
+                </fieldset>
+                <fieldset class="recuadros">
+                    <legend>Selecciona uno...</legend>
+                    <select>
+                        <option>Primero que nada...</option>
+                        <option>Argentina papá</option>
+                        <option>Segundo Francia</option>
+                        <option>Tercera opción? (4ta?)</option>
+                        <option>Lo mejor para lo último</option>
+                    </select>
+                </fieldset>
+                <fieldset class="recuadros">
+                    <legend>Cuentame un cuento...zzZ</legend>
+                    <textarea rows="10" cols="50" placeholder="Tres tristes tigres tragaban trigo en un trigal..."></textarea>
+                </fieldset>
+                <input type="submit" value="Enviar por Correo Argentino" class="boton">
+            </form>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <p>Hecho por Micaela A. Asselborn © y asociados (?)</p>
+        <p>Sin Copyright, copia lo que quieras. "Vive y deja vivir".</p>
+    </footer>
+</body>
+</html>

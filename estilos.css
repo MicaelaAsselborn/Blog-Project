@@ -1,0 +1,165 @@
+*{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(https://e0.pxfuel.com/wallpapers/585/940/desktop-wallpaper-gato-bonito-in-2020-cute-cat-cat-pattern-cartoon-cat-pattern.jpg);
+    
+}
+main, footer{
+    background-color: #f7d2c2;
+    width: 900px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+header{
+    width: 900px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+main{
+    margin-top: 70px;
+}
+header>nav>ul{
+    margin-left: -40px;
+}
+.boton{
+    padding: 10px;
+    margin: 10px;
+}
+#presentacion, #galeria, #viajes{
+    width: 95%;
+    text-align: center;
+    margin: auto;
+}
+#presentacion>p, #galeria>p, #viajes>p{
+    padding-bottom: 10px;
+}
+.recuadros{
+    width: 93%;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 15px;
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    height: 55px;
+    background-color: #f08080;
+    color:#ffe3e8;
+    border-radius: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+h2{
+    font-size: 35px;
+    font-family: Georgia, serif;
+    border-bottom: 4px solid #da9e89;
+    padding: 10px;
+}
+h1, h2{
+    text-align: center;
+}
+p{
+    font-size: 19px;
+}
+footer>p{
+    font-size: 15px;
+}
+#banner {
+    display: block;
+    border-radius: 55px;
+    margin: auto;
+}
+nav{
+    width: 897px;
+    height: 70px;
+    background-color: #f08080;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 999;
+    border: 2px solid #912d2d;
+}
+nav>ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav>ul>li{
+    font-size: 30px;
+    list-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: #ffe3e8;
+    padding: 10px;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    color: red
+}
+nav>ul>li :hover{
+    background-color: #ffe3e8;
+    color: lightcoral;
+    border-radius: 10px;
+    font-size: 35px;
+    padding: 20px;
+}
+footer{
+    padding-bottom: 1px;
+    text-align: center;
+    border-top: 2px solid lightcoral;
+}
+fieldset{
+    background-color: #ffe3e8;
+    border-color: #f08080;
+}
+legend{
+    font-size: 30px;
+}
+#principal{
+    text-align: center;
+}
+.caption{
+    text-align: center;
+}
+hr{
+    width: 900px;
+}
+.info>input{
+    width: 40%;
+    text-align: left;
+}
+.info>label{
+    width: 15%;
+    text-align: right;
+}
+.info>input, .info>label{
+    display:inline-block;
+}
+.info{
+    padding: 5px 0 0 5px
+}
+.fin-de-pagina{
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+    height: 130px;
+    border: 2px solid #f08080;
+}
+.icono{
+    border: 2px solid #f08080;
+    border-radius: 10px;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    bottom: 130px;
+    left: 720px;
+    background-color: white;
+}
+.receta{
+    margin-top: -120px
+}
