@@ -41,15 +41,10 @@ main{
     padding: 20px;
     border-radius: 15px;
 }
-#banner {
-    display: block;
-    border-radius: 55px;
-    margin: auto;
-}
 footer{
+    padding-top: 2px;
     padding-bottom: 1px;
     text-align: center;
-    border-top: 2px solid lightcoral;
 }
 fieldset{
     background-color: #ffe3e8;
@@ -86,16 +81,23 @@ nav>ul>li>a{
     padding: 10px;
     border-radius: 10px;
 }
-nav>ul>li :hover{
+nav>ul>li :hover, nav>ul>li :active {
     background-color: #ffe3e8;
     color: lightcoral;
     border-radius: 10px;
     font-size: 35px;
     padding: 20px;
+    border: 2px solid #912d2d;
 }
 /* IMAGENES */
 img{
     max-width: 80vw;
+}
+#banner {
+    display: block;
+    border: 2px solid #912d2d;
+    border-radius: 55px;
+    margin: auto;
 }
 .foto-pais{
     width: 650px;
@@ -112,7 +114,7 @@ img{
     border: 2px solid black;
 }
 .icono{
-    border: 2px solid #f08080;
+    border: 2px solid #912d2d;
     border-radius: 10px;
     width: 120px;
     height: 120px;
@@ -126,7 +128,7 @@ img{
     margin: 0 auto;
     border-radius: 15px;
     height: 130px;
-    border: 2px solid #f08080;
+    border: 2px solid #912d2d;
 }
 /* TEXTO */
 #presentacion>p, #galeria>p, #viajes>p{
@@ -145,8 +147,9 @@ h1{
 h2{
     font-size: 35px;
     font-family: Georgia, serif;
-    border-bottom: 4px solid #da9e89;
+    border-bottom: 3px solid #912d2d;
     padding: 10px;
+    color: #A51717
 }
 h1, h2{
     text-align: center;
