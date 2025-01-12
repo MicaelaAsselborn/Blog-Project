@@ -1,3 +1,4 @@
+/* TODO */
 *{
     scroll-behavior: smooth;
 }
@@ -5,16 +6,23 @@ body{
     background-image: url(https://e0.pxfuel.com/wallpapers/585/940/desktop-wallpaper-gato-bonito-in-2020-cute-cat-cat-pattern-cartoon-cat-pattern.jpg);
     
 }
+hr{
+    width: 900px;
+}
+/* CONTENEDORES */
 main, footer{
     background-color: #f7d2c2;
     width: 900px;
-    max-width: 100%;
+    max-width: 100vw;
+    min-width: 50vw;
     margin: 0 auto;
     padding-bottom: 10px;
     border-radius: 10px;
 }
 header{
     width: 900px;
+    max-width: 100vw;
+    overflow: hidden;
     margin: 0 auto;
     padding-bottom: 10px;
     border-radius: 10px;
@@ -22,8 +30,72 @@ header{
 main{
     margin-top: 70px;
 }
+#presentacion, #galeria, #viajes{
+    width: 95%;
+    text-align: center;
+    margin: auto;
+}
+.recuadros{
+    width: 93%;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 15px;
+}
+#banner {
+    display: block;
+    border-radius: 55px;
+    margin: auto;
+}
+footer{
+    padding-bottom: 1px;
+    text-align: center;
+    border-top: 2px solid lightcoral;
+}
+fieldset{
+    background-color: #ffe3e8;
+    border-color: #f08080;
+}
+/* NAVEGADOR */
+header>nav>ul{
+    margin-left: -40px;
+    max-width: 100vw;
+}
+nav{
+    width: 897px;
+    max-width: 100vw;
+    height: 70px;
+    background-color: #f08080;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 999;
+    border: 2px solid #912d2d;
+}
+nav>ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav>ul>li{
+    font-size: 30px;
+    list-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: #ffe3e8;
+    padding: 10px;
+    border-radius: 10px;
+}
+nav>ul>li :hover{
+    background-color: #ffe3e8;
+    color: lightcoral;
+    border-radius: 10px;
+    font-size: 35px;
+    padding: 20px;
+}
+/* IMAGENES */
 img{
-    max-width: 100%;
+    max-width: 80vw;
 }
 .foto-pais{
     width: 650px;
@@ -32,10 +104,6 @@ img{
     border-radius: 15px;
     border: 2px solid #912d2d;
 }
-.pais{
-    display: flex;
-    justify-content: space-between;
-}
 .bandera{
     width: 50px;
     height: 30px;
@@ -43,26 +111,26 @@ img{
     margin: 0 6px;
     border: 2px solid black;
 }
-header>nav>ul{
-    margin-left: -40px;
+.icono{
+    border: 2px solid #f08080;
+    border-radius: 10px;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    bottom: 130px;
+    left: 720px;
+    background-color: white;
 }
-.boton{
-    padding: 10px;
-    margin: 10px;
+.fin-de-pagina{
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+    height: 130px;
+    border: 2px solid #f08080;
 }
-#presentacion, #galeria, #viajes{
-    width: 95%;
-    text-align: center;
-    margin: auto;
-}
+/* TEXTO */
 #presentacion>p, #galeria>p, #viajes>p{
     padding-bottom: 10px;
-}
-.recuadros{
-    width: 93%;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 15px;
 }
 h1{
     font-size: 40px;
@@ -89,69 +157,28 @@ p{
 footer>p{
     font-size: 15px;
 }
-#banner {
-    display: block;
-    border-radius: 55px;
-    margin: auto;
-}
-nav{
-    width: 897px;
-    max-width: 100%;
-    height: 70px;
-    background-color: #f08080;
-    border-radius: 10px;
-    position: fixed;
-    z-index: 999;
-    border: 2px solid #912d2d;
-}
-nav>ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-nav>ul>li{
-    font-size: 30px;
-    list-style: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-nav>ul>li>a{
-    text-decoration: none;
-    color: #ffe3e8;
-    padding: 10px;
-    border-radius: 10px;
-}
-a{
-    text-decoration: none;
-    color: red
-}
-nav>ul>li :hover{
-    background-color: #ffe3e8;
-    color: lightcoral;
-    border-radius: 10px;
-    font-size: 35px;
-    padding: 20px;
-}
-footer{
-    padding-bottom: 1px;
-    text-align: center;
-    border-top: 2px solid lightcoral;
-}
-fieldset{
-    background-color: #ffe3e8;
-    border-color: #f08080;
-}
 legend{
     font-size: 30px;
 }
-#principal{
+#principal, .caption{
     text-align: center;
 }
-.caption{
-    text-align: center;
+.receta{
+    margin-top: -120px
 }
-hr{
-    width: 900px;
+.info{
+    padding: 5px 0 0 5px
 }
+.pais{
+    display: flex;
+    justify-content: space-between;
+}
+/* LINKS */
+a{
+    text-decoration: none;
+    color: rgb(176, 16, 16)
+}
+/* FORMULARIOS */
 .info>input{
     width: 40%;
     text-align: left;
@@ -163,26 +190,66 @@ hr{
 .info>input, .info>label{
     display:inline-block;
 }
-.info{
-    padding: 5px 0 0 5px
+.boton{
+    padding: 10px;
+    margin: 10px;
 }
-.fin-de-pagina{
-    display: block;
-    margin: 0 auto;
-    border-radius: 15px;
-    height: 130px;
-    border: 2px solid #f08080;
+/* VERSION PARA CELULARES */
+@media(max-width: 1020px){
+    header>nav>ul{
+        width: 100vw;
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+    .icono{
+        position: relative;
+        left: 0;
+        width: 0;
+        visibility: hidden;
+    }
+    main{
+        width: 100vw;
+        margin-top: 88px;
+    }
+    hr, fieldset, footer, nav, section{ 
+        width: 100vw;
+    }
+    .recuadros{
+        width: 100vw;
+    }
+    h1{
+        height: 10vw;
+    }
 }
-.icono{
-    border: 2px solid #f08080;
-    border-radius: 10px;
-    width: 120px;
-    height: 120px;
-    position: relative;
-    bottom: 130px;
-    left: 720px;
-    background-color: white;
-}
-.receta{
-    margin-top: -120px
+@media (max-width: 760px){
+    header>nav>ul{
+        width: 95vw;
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+    .icono{
+        position: relative;
+        left: 0;
+        width: 0;
+        visibility: hidden;
+    }
+    main{ 
+        width: 95vw;
+        margin-top: 80px;
+    }
+    hr, fieldset, footer, nav, section{
+        width: 95vw;
+    }
+    .recuadros{
+        width: 84vw;
+        margin-left: 0;
+    }
+    #presentacion{
+        width: 80vw;
+    }
+    h1{
+        font-size: 150%;
+        padding-top: 2px;
+        padding-bottom: auto;
+    }
 }
