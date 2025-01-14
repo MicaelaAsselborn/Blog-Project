@@ -30,10 +30,12 @@ header{
 main{
     margin-top: 70px;
 }
-#presentacion, #galeria, #viajes{
+#presentacion, #viajes{
     width: 95%;
-    text-align: center;
     margin: auto;
+    text-align: center;
+    border-bottom: 3px solid #912d2d;
+    margin-bottom: 5px
 }
 .recuadros{
     width: 93%;
@@ -49,6 +51,14 @@ footer{
 fieldset{
     background-color: #ffe3e8;
     border-color: #f08080;
+}
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 3px solid #912d2d;
+    margin-bottom: 5px
 }
 /* NAVEGADOR */
 header>nav>ul{
@@ -93,6 +103,15 @@ nav>ul>li :hover, nav>ul>li :active {
 img{
     max-width: 80vw;
 }
+.galeria>img{
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 15px;
+    border: 2px solid #912d2d
+}
 #banner {
     display: block;
     border: 2px solid #912d2d;
@@ -125,7 +144,9 @@ img{
 }
 .fin-de-pagina{
     display: block;
-    margin: 0 auto;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 15px;
     height: 130px;
     border: 2px solid #912d2d;
